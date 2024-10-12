@@ -41,8 +41,8 @@ h1 {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     margin: 0;
     padding: 0;
     display: block;
