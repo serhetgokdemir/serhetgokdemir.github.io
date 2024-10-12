@@ -34,11 +34,18 @@ h1 {
     margin-bottom: 10px;
 }
 
-.social-icons a {
-    text-decoration: none;
-    color: #000000;
-    margin: 0 10px;
-    font-size: 1.2em;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 .download-cv {
@@ -50,21 +57,10 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    font-weight: bold;
 }
-
-.about {
-    margin-top: 40px;
-    text-align: left;
-}
-
-.about h2 {
-    color: #000000;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 .about p {
-    color: #666;
+    color: black;
     line-height: 1.6;
     text-align: center;
 }
