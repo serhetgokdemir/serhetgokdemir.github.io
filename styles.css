@@ -30,6 +30,7 @@ body {
 }
 
 h1 {
+    font-family: 'Times New Roman', Times, serif;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -69,6 +70,7 @@ h1 {
     color: rgba(1,83,48,255);
 } 
 .about p {
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     line-height: 1.6;
     text-align: center;
