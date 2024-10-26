@@ -1,4 +1,3 @@
-/* Genel Stil */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -35,13 +34,12 @@ body {
     color: rgba(1, 83, 48, 255);
 }
 
-/* Proje Kartları */
 .container-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Aralığı genişlettik */
-    margin-top: 70px; /* Navbar ile içerik arasında boşluk bıraktık */
+    gap: 20px;
+    margin-top: 70px;
     padding: 0 10px;
 }
 
@@ -59,21 +57,25 @@ body {
 
 .container p {
     text-align: left;
-    line-height: 1.5; /* Daha okunaklı hale getirdik */
+    line-height: 1.5;
 }
 
 .container h1 {
     text-align: start;
 }
 
-/* Mobil cihazlar için uyarlama */
 @media (max-width: 768px) {
     .container-wrapper {
         flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
     }
     
     .container {
-        width: 90%;
+        width: 95%;
         margin: 10px auto;
+        padding-left: 5px; 
+        padding-right: 5px;
     }
 }
+
