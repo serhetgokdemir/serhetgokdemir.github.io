@@ -1,3 +1,13 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -7,7 +17,7 @@
     margin-bottom: 10px;
     position: fixed;
     width: 100%;
-    top: 0px;
+    top: 0;
     z-index: 1000;
     border: 1.5px solid black;
 }
@@ -16,22 +26,23 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-decoration: none;
-    color:black;
+    color: black;
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: rgba(1,83,48,255);
+    color: rgba(1, 83, 48, 255);
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-    display: block;
-    height: 100vh;
+
+/* Proje Kartları */
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Aralığı genişlettik */
+    margin-top: 70px; /* Navbar ile içerik arasında boşluk bıraktık */
+    padding: 0 10px;
 }
 
 .container {
@@ -42,13 +53,27 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
-    margin: 80px auto 10px;
+    margin: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
-.container p{
+
+.container p {
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.5; /* Daha okunaklı hale getirdik */
 }
-.container h1{
-    text-align:start;
+
+.container h1 {
+    text-align: start;
+}
+
+/* Mobil cihazlar için uyarlama */
+@media (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
