@@ -9,6 +9,36 @@ body {
     align-items: center;
     height: 100vh;
 }
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: white; /* Tasarımla uyumlu bir renk seç */
+    margin-bottom: 10px;
+    position: fixed; /* Navbar'ı sayfanın en üstüne sabitler */
+    width: 100%; /* Tüm genişliği kaplaması için */
+    top: 0px; /* Ekranın en üstünde konumlandırır */
+    z-index: 1000; /* Diğer öğelerin üzerine gelmesi için */
+    border: 1.5px solid black;
+}
+
+.navbar a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:black; /* Minimal renk tonu */
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: rgba(1,83,48,255);
+}
+html {
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     text-align: center;
@@ -19,6 +49,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
+    margin-top: 60px;
 }
 
 .profile-pic {
@@ -73,6 +104,7 @@ h1 {
 .about p {
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: center;
 }
+
