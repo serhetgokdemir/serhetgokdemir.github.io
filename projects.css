@@ -34,6 +34,7 @@ body {
 .navbar a:hover {
     color: rgba(1, 83, 48, 255);
 }
+
 .container-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -59,10 +60,22 @@ body {
     text-align: left;
     line-height: 1.5;
 }
-
 .container h1 {
     text-align: start;
 }
+.container a {
+    
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: rgba(1, 83, 48, 255);
+}
+
 @media (max-width: 768px) {
     .container-wrapper {
         flex-direction: column;
