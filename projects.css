@@ -55,25 +55,28 @@ body {
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
+.container img{
+    float: right;
+}
 
 .container p {
     text-align: left;
     line-height: 1.5;
 }
 .container h1 {
-    text-align: start;
+    text-align: left;
 }
 .container a {
     
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: black;
+    color: rgba(1, 83, 48, 255);
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
 
 .container a:hover {
-    color: rgba(1, 83, 48, 255);
+    color: darkcyan;
 }
 
 @media (max-width: 768px) {
