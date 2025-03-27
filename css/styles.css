@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: black;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,25 +21,25 @@ html {
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
-    background-color: white;
+    background-color: black;
     margin-bottom: 10px;
     position: fixed;
     width: 100%;
     top: 0px;
     z-index: 1000;
     overflow-x: auto;
-    -ms-overflow-style: none; /* IE ve Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .navbar::-webkit-scrollbar {
-    display: none; /* Chrome ve Safari */
+    display: none;
 }
 
 .navbar a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
@@ -50,7 +50,7 @@ html {
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -61,10 +61,11 @@ html {
 
 .container p {
     line-height: 1.5;
+    color: white;
 }
 
-h1 {
-    color: #000000;
+h1,h3 {
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -75,6 +76,7 @@ h1 {
 }
 
 .social-icons img {
+    filter: invert(1);
     max-width: 30px;
     max-height: 30px;
     margin: 0;
@@ -91,8 +93,8 @@ h1 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: white;
-    color: #000000;
+    background-color: black;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
@@ -106,12 +108,12 @@ h1 {
 }
 
 .about p {
-    color: black;
-    line-height: 1.5; /* Satır boşluğunu koruduk */
+    color: white;
+    line-height: 1.5;
     text-align: center;
 }
 .container a{
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -125,7 +127,7 @@ h1 {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 6px solid #000000;
+    border: 6px solid black;
     transition: border-color 0.3s ease, transform 0.5s ease-in-out;
     cursor: pointer;
     transform-style: preserve-3d;
@@ -139,3 +141,18 @@ h1 {
     0% { transform: rotateY(0deg); }
     100% { transform: rotateY(360deg); }
 }
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-down {
+    animation: fadeInDown 1.25s ease-out forwards;
+  }

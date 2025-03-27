@@ -1,7 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: black;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,19 +20,18 @@ html {
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
-    background-color: white;
+    background-color: black;
     margin-bottom: 10px;
     position: fixed;
     width: 100%;
     top: 0px;
     z-index: 1000;
-    border: 1.5px solid black;
 }
 
 .navbar a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 5px 10px;
     transition: color 0.3s ease;
 }
@@ -44,7 +42,7 @@ html {
 
 .container {
     text-align: left;
-    background-color: white;
+    background-color: black;
     padding: 20px;
     max-width: 900px;
     width: 100%;
@@ -53,15 +51,16 @@ html {
 
 .container p {
     line-height: 1.5;
+    color: white;
 }
 
 h1 {
-    color: #000000;
+    color: white;
     margin-bottom: 10px;
 }
 
 .container a{
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
