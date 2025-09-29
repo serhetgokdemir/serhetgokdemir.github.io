@@ -64,6 +64,13 @@ html {
     color: white;
 }
 
+.container pre {
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    /* font-family: "Roboto", sans-serif;*/
+}
+
 h1,h3 {
     color: white;
     margin-bottom: 10px;
