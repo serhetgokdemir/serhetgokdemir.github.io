@@ -9,7 +9,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    overflow-y: scroll;
 }
 
 html {
@@ -50,7 +49,7 @@ html {
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     background-color: black;
     padding: 20px;
     border-radius: 10px;
@@ -65,47 +64,19 @@ html {
     color: white;
 }
 
+.container pre {
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    /* font-family: "Roboto", sans-serif;*/
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 100%;
+}
+
 h1,h3 {
     color: white;
     margin-bottom: 10px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.social-icons img {
-    filter: invert(1);
-    max-width: 30px;
-    max-height: 30px;
-    margin: 0;
-    padding: 0;
-    display: block;
-    transition: filter 0.3s ease;
-}
-
-.social-icons img:hover {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(23%) saturate(656%) hue-rotate(137deg) brightness(90%) contrast(92%);
-}
-
-.download-cv {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.download-cv:hover {
-    color: darkcyan;
 }
 
 .about p {
@@ -120,22 +91,6 @@ h1,h3 {
 }
 .container a:hover {
     color: darkcyan;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 6px solid black;
-    transition: border-color 0.3s ease, transform 0.5s ease-in-out;
-    cursor: pointer;
-    transform-style: preserve-3d;
-}
-
-.profile-pic:hover {
-    border-color: darkcyan;
 }
 
 @keyframes spinEffect {
