@@ -9,12 +9,14 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar {
