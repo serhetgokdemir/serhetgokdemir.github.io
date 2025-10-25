@@ -1,0 +1,164 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #000000;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.navbarindex {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: black;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.navbarindex::-webkit-scrollbar {
+    display: none;
+}
+
+.navbarindex a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbarindex a:hover {
+    color: darkcyan;
+}
+
+.container {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.container p {
+    line-height: 1.5;
+    color: white;
+}
+
+h1,h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons img {
+    filter: invert(1);
+    max-width: 30px;
+    max-height: 30px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(23%) saturate(656%) hue-rotate(137deg) brightness(90%) contrast(92%);
+}
+
+.download-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.download-cv:hover {
+    color: darkcyan;
+}
+
+.about p {
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.container a:hover {
+    color: darkcyan;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 6px solid black;
+    transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.profile-pic:hover {
+    border-color: darkcyan;
+}
+
+@keyframes spinEffect {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-down {
+    animation: fadeInDown 1.25s ease-out forwards;
+  }
