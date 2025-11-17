@@ -1,6 +1,5 @@
 body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: #000000;
     color: black;
     margin: 0;
     padding: 0;
@@ -11,6 +10,8 @@ body {
     min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    /*background-color: #000000;*/
+    background-image: linear-gradient(to top, #000000 0%, #000ba4 100%);
 }
 
 html {
@@ -26,7 +27,7 @@ html {
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
-    background-color: black;
+    background-color: transparent;
     margin-bottom: 10px;
     position: fixed;
     width: 100%;
@@ -46,19 +47,18 @@ html {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .navbarindex a:hover {
-    color: darkcyan;
+    color: yellow;
 }
 
 .container {
     text-align: center;
-    background-color: black;
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     width: 100%;
     margin-top: 60px;
@@ -88,18 +88,18 @@ h1,h3 {
     margin: 0;
     padding: 0;
     display: block;
-    transition: filter 0.3s ease;
+    transition: filter 1s ease, transform 1s ease;
 }
 
 .social-icons img:hover {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(23%) saturate(656%) hue-rotate(137deg) brightness(90%) contrast(92%);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(72%) saturate(2704%) hue-rotate(2deg) brightness(105%) contrast(103%);
 }
 
 .download-cv {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -110,7 +110,7 @@ h1,h3 {
 }
 
 .download-cv:hover {
-    color: darkcyan;
+    color: yellow;
 }
 
 .about p {
@@ -124,7 +124,7 @@ h1,h3 {
     transition: color 0.3s ease;
 }
 .container a:hover {
-    color: darkcyan;
+    color: yellow;
 }
 
 .profile-pic {
@@ -140,7 +140,7 @@ h1,h3 {
 }
 
 .profile-pic:hover {
-    border-color: darkcyan;
+    border-color: rgb(0, 120, 120);
 }
 
 @keyframes spinEffect {
