@@ -110,7 +110,7 @@ h1,h3 {
 }
 
 .download-cv:hover {
-    color: yellow;
+    color: cyan;
 }
 
 .about p {
@@ -124,7 +124,7 @@ h1,h3 {
     transition: color 0.3s ease;
 }
 .container a:hover {
-    color: yellow;
+    color: cyan;
 }
 
 .profile-pic {
