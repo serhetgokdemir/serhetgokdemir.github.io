@@ -9,13 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Diger dosyalarda
-fetch("../components/navbar.html")
+// Navbari indexte cagir
+fetch("/components/navbar.html")
     .then(res => res.text())
     .then(html => document.getElementsByClassName("navbar")[0].innerHTML = html);
-
-// Navbari indexte cagir
-fetch("/components/navbarindex.html")
-    .then(res => res.text())
-    .then(html => document.getElementsByClassName("navbarindex")[0].innerHTML = html);
 
