@@ -87,9 +87,25 @@ html, body {
     text-decoration: none;
     padding: 5px 10px;
     transition: color 0.3s ease;
+    flex-direction: column;
 }
 
 .container a:hover {
+    color: darkcyan;
+}
+
+#goBack{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+#goBack:hover{
     color: darkcyan;
 }
 
