@@ -1,3 +1,4 @@
+// Fotografi dondurme efekti
 document.addEventListener("DOMContentLoaded", function() {
     const profilePic = document.querySelector(".profile-pic");
 
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Navbari indexte cagir
+// Navbari cagir
 fetch("/components/navbar.html")
     .then(res => res.text())
     .then(html => document.getElementsByClassName("navbar")[0].innerHTML = html);
