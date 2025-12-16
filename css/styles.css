@@ -21,7 +21,7 @@ html {
     overflow-y: scroll;
 }
 
-.navbarindex {
+.navbar {
     font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
@@ -38,11 +38,11 @@ html {
     scrollbar-width: none;
 }
 
-.navbarindex::-webkit-scrollbar {
+.navbar::-webkit-scrollbar {
     display: none;
 }
 
-.navbarindex a {
+.navbar a {
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -50,7 +50,7 @@ html {
     transition: color 0.5s ease;
 }
 
-.navbarindex a:hover {
+.navbar a:hover {
     color: darkcyan;
 }
 
