@@ -6,10 +6,12 @@ body {
     height: auto;
     min-height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
-html, body {
+html{
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 
