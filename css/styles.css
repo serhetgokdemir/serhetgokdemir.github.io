@@ -99,14 +99,43 @@ main a:hover {
     margin-top: 30px;
 }
 
+.project-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.project-title {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: #f5f3ef;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.project-box {
+    border: 1px solid #000;
+    padding: 30px 20px 20px 20px;
+}
+
+.project-box p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 .project-item {
     margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
 }
 
 .project-item:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid #000;
 }
 
 .project-item h4 {
@@ -123,10 +152,74 @@ main a:hover {
 
 .project-links {
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .project-links a {
     margin-right: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.project-tech span {
+    padding: 3px 8px;
+    background-color: #f5f3ef;
+    border: 1px solid #d32f2f;
+    border-radius: 2px;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.project-tech span:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech-tags span {
+    padding: 4px 10px;
+    background-color: #fff;
+    border: 1px solid #d32f2f;
+    border-radius: 2px;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.tech-tags span:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+.math-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.math-tags span {
+    padding: 5px 12px;
+    background-color: #fff;
+    border: 1px solid #d32f2f;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.math-tags span:hover {
+    background-color: #d32f2f;
+    color: #fff;
 }
 
 footer {
