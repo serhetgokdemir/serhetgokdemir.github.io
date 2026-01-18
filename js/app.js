@@ -3,16 +3,25 @@ async function loadNavbar() {
     const navbarContainer = document.getElementById('navbar-container');
     if (!navbarContainer) return;
     
-    // Determine the correct path to components based on current location
+    // Calculate relative path based on current file location
     const path = window.location.pathname;
-    let navbarPath = '/components/navbar.html';
     
-    if (path.includes('/pages/')) {
-        if (path.includes('/ds-projects/') || path.includes('/swe-projects/') || path.includes('/writings/')) {
-            navbarPath = '../../components/navbar.html';
-        } else {
-            navbarPath = '../components/navbar.html';
-        }
+    // Remove filename and count directory levels
+    const pathParts = path.split('/').filter(part => part && !part.includes('.html'));
+    
+    // Calculate how many levels deep we are from root
+    let levelsDeep = 0;
+    if (pathParts.length > 0) {
+        // If we're in a folder (not root), count the depth
+        levelsDeep = pathParts.length;
+    }
+    
+    // Build the relative path to components
+    let navbarPath;
+    if (levelsDeep === 0) {
+        navbarPath = 'components/navbar.html';
+    } else {
+        navbarPath = '../'.repeat(levelsDeep) + 'components/navbar.html';
     }
     
     try {
@@ -21,7 +30,7 @@ async function loadNavbar() {
         navbarContainer.innerHTML = html;
         
         // Fix links based on current directory level
-        fixNavbarLinks();
+        fixNavbarLinks(levelsDeep);
         
         // Update active link based on current page
         updateActiveLink();
@@ -30,8 +39,7 @@ async function loadNavbar() {
     }
 }
 
-function fixNavbarLinks() {
-    const path = window.location.pathname;
+function fixNavbarLinks(levelsDeep) {
     const nav = document.querySelector('#navbar-container nav');
     if (!nav) return;
     
@@ -39,24 +47,20 @@ function fixNavbarLinks() {
     links.forEach(link => {
         let href = link.getAttribute('href');
         
-        // Adjust links based on current directory level
-        if (path.includes('/pages/')) {
-            if (path.includes('/ds-projects/') || path.includes('/swe-projects/') || path.includes('/writings/')) {
-                // Two levels deep
-                if (href.startsWith('pages/')) {
-                    href = '../' + href;
-                } else if (href === 'index.html') {
-                    href = '../../index.html';
-                }
-            } else {
-                // One level deep  
-                if (href.startsWith('pages/')) {
-                    href = href.replace('pages/', '');
-                } else if (href === 'index.html') {
-                    href = '../index.html';
-                }
+        // Build correct path based on depth
+        if (levelsDeep === 0) {
+            // We're at root, links are correct
+            return;
+        } else {
+            // Adjust all links to go back to root first
+            const rootPath = '../'.repeat(levelsDeep);
+            
+            if (href.startsWith('pages/')) {
+                // Convert pages/about.html -> ../pages/about.html (or more ../)
+                link.setAttribute('href', rootPath + href);
+            } else if (href === 'index.html') {
+                link.setAttribute('href', rootPath + href);
             }
-            link.setAttribute('href', href);
         }
     });
 }
