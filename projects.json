@@ -33,7 +33,7 @@
         "description": "This is an example project to demonstrate the project detail system.",
         "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
         "hasDetail": true,
-        "filename": "example-project.md",
+        "filename": "projects/example-project.md",
         "links": {
             "github": "https://github.com/username/project"
         }
