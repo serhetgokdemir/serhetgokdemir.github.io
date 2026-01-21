@@ -15,7 +15,9 @@
         "description": "A web application developed to search, filter, and visualize large (or small) scale Call Detail Record (CDR) files in ASCII format.",
         "technologies": ["Java", "Spring Boot", "JavaScript", "HTML/CSS"],
         "hasDetail": false,
-        "links": {}
+        "links": {
+            "github":"https://github.com/serhetgokdemir/cdr-viewer-app"
+        }
     },
     {
         "id": "serhet-website",
@@ -25,17 +27,6 @@
         "hasDetail": false,
         "links": {
             "github": "https://github.com/serhetgokdemir/serhetgokdemir.github.io"
-        }
-    },
-    {
-        "id": "example-project",
-        "title": "Example Project (2026)",
-        "description": "This is an example project to demonstrate the project detail system.",
-        "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
-        "hasDetail": true,
-        "filename": "content/projects/projects/example-project.md",
-        "links": {
-            "github": "https://github.com/username/project"
         }
     }
 ]
