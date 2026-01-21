@@ -42,7 +42,7 @@ function markdownToHTML(markdown) {
 // Load and display blog posts
 async function loadBlogPosts() {
     try {
-        const response = await fetch('/blog-posts.json');
+        const response = await fetch('/content/blog-posts.json');
         const posts = await response.json();
         
         const container = document.getElementById('blog-posts-container');
@@ -80,7 +80,7 @@ function createBlogPostElement(post) {
     
     const readMore = document.createElement('div');
     readMore.className = 'project-links';
-    readMore.innerHTML = `<a href="blog/post.html?id=${post.id}">read more →</a>`;
+    readMore.innerHTML = `<a href="/content/blog/post.html?id=${post.id}">read more →</a>`;
     
     box.appendChild(date);
     box.appendChild(summary);

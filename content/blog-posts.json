@@ -4,6 +4,6 @@
         "title": "Example Blog Post (2026)",
         "date": "2026-01-18",
         "summary": "This is an example blog post to demonstrate the blog system. You can write your posts in Markdown format and they will be automatically rendered.",
-        "filename": "example-post.md"
+        "filename": "content/blog/posts/example-post.md"
     }
 ]

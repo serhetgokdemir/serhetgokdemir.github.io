@@ -1,7 +1,7 @@
 // Load and display projects
 async function loadProjects() {
     try {
-        const response = await fetch('/projects.json');
+        const response = await fetch('/content/projects.json');
         const projects = await response.json();
         
         const container = document.getElementById('projects-container');
@@ -50,7 +50,7 @@ function createProjectElement(project) {
         linkHtmls.push(`<a href="${project.links.github}" target="_blank">source code</a>`);
     }
     if (project.hasDetail) {
-        linkHtmls.push(`<a href="project-detail.html?id=${project.id}">read more →</a>`);
+        linkHtmls.push(`<a href="/content/projects/project.html?id=${project.id}">read more →</a>`);
     }
     // Join with black vertical bar
     links.innerHTML = linkHtmls.join('<span style="color:#111;margin:0 8px;">|</span>');

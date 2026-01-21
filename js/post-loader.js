@@ -54,7 +54,7 @@ async function loadBlogPost() {
     
     try {
         // Load metadata
-        const metaResponse = await fetch('/blog-posts.json');
+        const metaResponse = await fetch('/content/blog-posts.json');
         const posts = await metaResponse.json();
         const postMeta = posts.find(p => p.id === postId);
         
@@ -67,7 +67,7 @@ async function loadBlogPost() {
         document.title = postMeta.title + ' - Serhet Gokdemir';
         
         // Load markdown content
-        const contentResponse = await fetch(`posts/${postMeta.filename}`);
+        const contentResponse = await fetch(`/${postMeta.filename}`);
         const markdown = await contentResponse.text();
         const html = markdownToHTML(markdown);
         

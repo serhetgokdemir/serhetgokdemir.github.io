@@ -54,7 +54,7 @@ async function loadProjectDetail() {
     
     try {
         // Load metadata
-        const metaResponse = await fetch('/projects.json');
+        const metaResponse = await fetch('/content/projects.json');
         const projects = await metaResponse.json();
         const projectMeta = projects.find(p => p.id === projectId);
         
@@ -67,7 +67,7 @@ async function loadProjectDetail() {
         document.title = projectMeta.title + ' - Serhet Gokdemir';
         
         // Load markdown content
-        const contentResponse = await fetch(`projects/${projectMeta.filename}`);
+        const contentResponse = await fetch(`/${projectMeta.filename}`);
         const markdown = await contentResponse.text();
         const html = markdownToHTML(markdown);
         
