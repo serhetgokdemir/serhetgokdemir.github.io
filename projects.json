@@ -1,0 +1,41 @@
+[
+    {
+        "id": "movie-teller",
+        "title": "movie teller",
+        "description": "A light weight and ad free movie recommendation app designed with 2000s web UI aesthetics.",
+        "technologies": ["C#", "ASP.NET", "JavaScript", "HTML/CSS"],
+        "hasDetail": false,
+        "links": {
+            "live": "https://movieteller.app"
+        }
+    },
+    {
+        "id": "cdr-viewer",
+        "title": "CDR Viewer",
+        "description": "A web application developed to search, filter, and visualize large (or small) scale Call Detail Record (CDR) files in ASCII format.",
+        "technologies": ["Java", "Spring Boot", "JavaScript", "HTML/CSS"],
+        "hasDetail": false,
+        "links": {}
+    },
+    {
+        "id": "serhet-website",
+        "title": "serhet.com",
+        "description": "I maintain this website to develop my frontend skills and practise version control.",
+        "technologies": ["HTML/CSS", "JavaScript"],
+        "hasDetail": false,
+        "links": {
+            "github": "https://github.com/serhetgokdemir/serhetgokdemir.github.io"
+        }
+    },
+    {
+        "id": "example-project",
+        "title": "Example Project (2026)",
+        "description": "This is an example project to demonstrate the project detail system.",
+        "technologies": ["Python", "Django", "PostgreSQL", "Docker"],
+        "hasDetail": true,
+        "filename": "example-project.md",
+        "links": {
+            "github": "https://github.com/username/project"
+        }
+    }
+]
