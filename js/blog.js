@@ -42,7 +42,11 @@ function markdownToHTML(markdown) {
 // Load and display blog posts
 async function loadBlogPosts() {
     try {
-        const response = await fetch('/content/blog-posts.json');
+        // Dil tespiti
+        const isTr = window.location.pathname.includes('/tr/');
+        const jsonPath = isTr ? '/content/blog-posts.json' : '/content/blog-posts.json';
+        
+        const response = await fetch(jsonPath);
         const posts = await response.json();
         
         const container = document.getElementById('blog-posts-container');
@@ -52,7 +56,7 @@ async function loadBlogPosts() {
         posts.sort((a, b) => new Date(b.date) - new Date(a.date));
         
         for (const post of posts) {
-            const postElement = createBlogPostElement(post);
+            const postElement = createBlogPostElement(post, isTr);
             container.appendChild(postElement);
         }
     } catch (error) {
@@ -80,7 +84,9 @@ function createBlogPostElement(post) {
     
     const readMore = document.createElement('div');
     readMore.className = 'project-links';
-    readMore.innerHTML = `<a href="/content/blog/post.html?id=${post.id}">read more →</a>`;
+    const isTr = window.location.pathname.includes('/tr/');
+    const readMoreText = isTr ? 'devamını oku →' : 'read more →';
+    readMore.innerHTML = `<a href="/content/blog/post.html?id=${post.id}">${readMoreText}</a>`;
     
     box.appendChild(date);
     box.appendChild(summary);
@@ -95,7 +101,9 @@ function createBlogPostElement(post) {
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
+    const isTr = window.location.pathname.includes('/tr/');
+    const locale = isTr ? 'tr-TR' : 'en-US';
+    return date.toLocaleDateString(locale, options);
 }
 
 // Load blog posts when DOM is ready
