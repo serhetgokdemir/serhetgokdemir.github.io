@@ -67,12 +67,20 @@ function fixNavbarLinks(levelsDeep) {
 
 function updateActiveLink() {
     const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
     const links = document.querySelectorAll('nav a');
     
     links.forEach(link => {
         const href = link.getAttribute('href');
-        if (href && (currentPath.endsWith(href) || 
-            (href === 'index.html' && currentPath === '/'))) {
+        if (!href) return;
+        
+        // Extract just the filename from href
+        const hrefPage = href.split('/').pop();
+        
+        // Check if this link matches current page
+        if (hrefPage === currentPage || 
+            (currentPage === '' && hrefPage === 'index.html') ||
+            (currentPath === '/' && hrefPage === 'index.html')) {
             link.style.fontWeight = '600';
         }
     });
