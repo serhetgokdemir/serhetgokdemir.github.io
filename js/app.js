@@ -91,21 +91,19 @@ document.addEventListener('DOMContentLoaded', loadNavbar);
 
 // Page Transition Animations
 (function() {
-    // Mark that JS is enabled
-    document.body.classList.add('js-enabled');
-    
     // Check if this is the first visit in this session
     const isFirstVisit = !sessionStorage.getItem('hasVisited');
     
     if (isFirstVisit) {
-        // First visit - apply staggered fade animation
+        // First visit - trigger staggered fade animation
         document.body.classList.add('page-loading');
         sessionStorage.setItem('hasVisited', 'true');
         
-        // Remove the class after animations complete
+        // Remove the class and html first-visit class after animations complete
         setTimeout(() => {
             document.body.classList.remove('page-loading');
-        }, 1100);
+            document.documentElement.classList.remove('first-visit');
+        }, 900);
     }
     
     // Define page order for navigation direction

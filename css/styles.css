@@ -301,36 +301,24 @@ footer {
 /* Page Transition Animations */
 
 /* Initial Page Load - Staggered Fade In */
-/* Hide elements by default until JS loads */
-header, main, footer {
+/* Hide elements on first visit */
+html.first-visit body header,
+html.first-visit body main,
+html.first-visit body footer {
     opacity: 0;
 }
 
-/* Show elements immediately if JS doesn't load */
-body:not(.js-enabled) header,
-body:not(.js-enabled) main,
-body:not(.js-enabled) footer {
-    opacity: 1;
-}
-
-/* Animated entrance on first load */
+/* Animate elements on first load */
 body.page-loading header {
-    animation: staggeredFadeIn 0.6s ease-out 0.1s forwards;
+    animation: staggeredFadeIn 0.5s ease-out 0.05s forwards;
 }
 
 body.page-loading main {
-    animation: staggeredFadeIn 0.6s ease-out 0.3s forwards;
+    animation: staggeredFadeIn 0.5s ease-out 0.2s forwards;
 }
 
 body.page-loading footer {
-    animation: staggeredFadeIn 0.6s ease-out 0.5s forwards;
-}
-
-/* Show without animation for subsequent visits */
-body.js-enabled:not(.page-loading) header,
-body.js-enabled:not(.page-loading) main,
-body.js-enabled:not(.page-loading) footer {
-    opacity: 1;
+    animation: staggeredFadeIn 0.5s ease-out 0.35s forwards;
 }
 
 @keyframes staggeredFadeIn {
