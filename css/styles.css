@@ -8,7 +8,10 @@ body {
     font-family: 'JetBrains Mono', monospace;
     line-height: 1.7;
     color: #000;
-    background-color: #f5f3ef;
+    background-color: #f8f9fa;
+    background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.008) 2px, rgba(0,0,0,.008) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.008) 2px, rgba(0,0,0,.008) 4px);
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -42,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: #d32f2f;
+    color: #4A90E2;
     text-decoration: none;
 }
 
@@ -83,12 +86,12 @@ main ul li {
 
 main ul li::before {
     content: "• ";
-    color: #d32f2f;
+    color: #4A90E2;
     font-weight: bold;
 }
 
 main a {
-    color: #d32f2f;
+    color: #4A90E2;
     text-decoration: none;
 }
 
@@ -109,7 +112,7 @@ main a:hover {
     position: absolute;
     top: 0;
     left: 15px;
-    background-color: #f5f3ef;
+    background-color: #f8f9fa;
     padding: 0 8px;
     font-size: 16px;
     font-weight: 600;
@@ -169,15 +172,15 @@ main a:hover {
 
 .project-tech span {
     padding: 3px 8px;
-    background-color: #f5f3ef;
-    border: 1px solid #d32f2f;
+    background-color: #f8f9fa;
+    border: 1px solid #4A90E2;
     border-radius: 2px;
     font-size: 12px;
     transition: background-color 0.2s ease;
 }
 
 .project-tech span:hover {
-    background-color: #d32f2f;
+    background-color: #4A90E2;
     color: #fff;
 }
 
@@ -191,14 +194,14 @@ main a:hover {
 .tech-tags span {
     padding: 4px 10px;
     background-color: #fff;
-    border: 1px solid #d32f2f;
+    border: 1px solid #4A90E2;
     border-radius: 2px;
     font-size: 12px;
     transition: background-color 0.2s ease;
 }
 
 .tech-tags span:hover {
-    background-color: #d32f2f;
+    background-color: #4A90E2;
     color: #fff;
 }
 
@@ -212,14 +215,14 @@ main a:hover {
 .math-tags span {
     padding: 5px 12px;
     background-color: #fff;
-    border: 1px solid #d32f2f;
+    border: 1px solid #4A90E2;
     border-radius: 3px;
     font-size: 14px;
     transition: background-color 0.2s ease;
 }
 
 .math-tags span:hover {
-    background-color: #d32f2f;
+    background-color: #4A90E2;
     color: #fff;
 }
 
