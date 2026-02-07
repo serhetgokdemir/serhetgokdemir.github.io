@@ -298,98 +298,6 @@ footer {
     text-align: center;
 }
 
-/* Page Transition Animations */
-
-/* Initial Page Load - Staggered Fade In */
-body.page-loading header {
-    opacity: 0;
-    animation: staggeredFadeIn 0.5s ease-out 0.05s forwards;
-}
-
-body.page-loading main {
-    opacity: 0;
-    animation: staggeredFadeIn 0.5s ease-out 0.2s forwards;
-}
-
-body.page-loading footer {
-    opacity: 0;
-    animation: staggeredFadeIn 0.5s ease-out 0.35s forwards;
-}
-
-@keyframes staggeredFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Page Navigation - Horizontal Slide */
-.page-transition-container {
-    position: relative;
-}
-
-/* Slide to right (going backward) */
-.page-transitioning.slide-right .container {
-    animation: slideOutRight 0.3s ease-in-out forwards;
-}
-
-/* Slide to left (going forward) */
-.page-transitioning.slide-left .container {
-    animation: slideOutLeft 0.3s ease-in-out forwards;
-}
-
-.page-entering .container {
-    animation: slideInRight 0.3s ease-in-out forwards;
-}
-
-@keyframes slideOutLeft {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-}
-
-@keyframes slideOutRight {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -405,20 +313,5 @@ body.page-loading footer {
     
     nav {
         font-size: 13px;
-    }
-    
-    /* Disable all animations on mobile */
-    body.page-loading header,
-    body.page-loading main,
-    body.page-loading footer {
-        animation: none !important;
-        opacity: 1 !important;
-    }
-    
-    .page-transitioning.slide-right .container,
-    .page-transitioning.slide-left .container {
-        animation: none !important;
-        opacity: 1 !important;
-        transform: none !important;
     }
 }
