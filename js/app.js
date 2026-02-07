@@ -91,6 +91,9 @@ document.addEventListener('DOMContentLoaded', loadNavbar);
 
 // Page Transition Animations
 (function() {
+    // Mark that JS is enabled
+    document.body.classList.add('js-enabled');
+    
     // Check if this is the first visit in this session
     const isFirstVisit = !sessionStorage.getItem('hasVisited');
     
