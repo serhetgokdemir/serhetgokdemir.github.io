@@ -10,6 +10,7 @@ body {
     color: #000;
     background-color: #f5f3ef;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -295,6 +296,98 @@ footer {
     font-size: 14px;
     color: #666;
     text-align: center;
+}
+
+/* Page Transition Animations */
+
+/* Initial Page Load - Staggered Fade In */
+body.page-loading header {
+    opacity: 0;
+    animation: staggeredFadeIn 0.6s ease-out 0.1s forwards;
+}
+
+body.page-loading main {
+    opacity: 0;
+    animation: staggeredFadeIn 0.6s ease-out 0.3s forwards;
+}
+
+body.page-loading footer {
+    opacity: 0;
+    animation: staggeredFadeIn 0.6s ease-out 0.5s forwards;
+}
+
+@keyframes staggeredFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page Navigation - Horizontal Slide */
+.page-transition-container {
+    position: relative;
+}
+
+/* Slide to right (going backward) */
+.page-transitioning.slide-right .container {
+    animation: slideOutRight 0.3s ease-in-out forwards;
+}
+
+/* Slide to left (going forward) */
+.page-transitioning.slide-left .container {
+    animation: slideOutLeft 0.3s ease-in-out forwards;
+}
+
+.page-entering .container {
+    animation: slideInRight 0.3s ease-in-out forwards;
+}
+
+@keyframes slideOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 768px) {
