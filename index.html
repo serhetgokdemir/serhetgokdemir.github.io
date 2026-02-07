@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        // Check for first visit before page renders
+        if (!sessionStorage.getItem('hasVisited')) {
+            document.documentElement.className = 'first-visit';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +31,11 @@
             <ul>
                 <li>English: <a href="assets/serhetgokdemir-cv.pdf" target="_blank">serhetgokdemir-cv.pdf</a></li>
                 <li>Turkish: <a href="assets/serhetgokdemir-cv-tr.pdf" target="_blank">serhetgokdemir-cv-tr.pdf</a></li>
-            </ul>
+            </ul><br>
+            <img 
+            src="https://ghchart.rshah.org/serhetgokdemir"
+            alt="GitHub Contributions" style="display: block; margin: 0 auto;"
+            />
         </main>
 
         <footer>
