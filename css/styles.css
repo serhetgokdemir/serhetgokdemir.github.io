@@ -301,23 +301,18 @@ footer {
 /* Page Transition Animations */
 
 /* Initial Page Load - Staggered Fade In */
-/* Hide elements on first visit */
-html.first-visit body header,
-html.first-visit body main,
-html.first-visit body footer {
-    opacity: 0;
-}
-
-/* Animate elements on first load */
 body.page-loading header {
+    opacity: 0;
     animation: staggeredFadeIn 0.5s ease-out 0.05s forwards;
 }
 
 body.page-loading main {
+    opacity: 0;
     animation: staggeredFadeIn 0.5s ease-out 0.2s forwards;
 }
 
 body.page-loading footer {
+    opacity: 0;
     animation: staggeredFadeIn 0.5s ease-out 0.35s forwards;
 }
 
@@ -410,5 +405,20 @@ body.page-loading footer {
     
     nav {
         font-size: 13px;
+    }
+    
+    /* Disable all animations on mobile */
+    body.page-loading header,
+    body.page-loading main,
+    body.page-loading footer {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    
+    .page-transitioning.slide-right .container,
+    .page-transitioning.slide-left .container {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
