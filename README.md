@@ -1,31 +1,33 @@
 ## Folder Hierarchy
 
 ```text
-repo-name/
+serhet.com/
 ├─ assets/
 ├─ components/
 │  └─ navbar.html
+├─ content/
+│  ├─ blog-posts.json
+│  ├─ projects.json
+│  ├─ blog/
+│  │  ├─ post.html
+│  │  └─ posts/
+│  └─ projects/
+│     ├─ project.html
+│     └─ projects/
 ├─ css/
-│  ├─ about.css
-│  ├─ contact.css
-│  ├─ projects.css
 │  └─ styles.css
 ├─ favicon/
 ├─ js/
-│  └─ scripts.js
+│  ├─ app.js
+│  ├─ blog.js
+│  ├─ post-loader.js
+│  ├─ project-loader.js
+│  └─ projects.js
 ├─ pages/
-│  ├─ ds-projects/
-│  │  ├─ postings/
-│  │  └─ main.html
-│  ├─ swe-projects/
-│  │  ├─ postings/
-│  │  └─ main.html
-│  ├─ writings/
-│  │  ├─ postings/
-│  │  └─ main.html
 │  ├─ about.html
+│  ├─ blog.html
 │  ├─ contact.html
+│  ├─ project-detail.html
 │  └─ projects.html
-├─ CNAME
 ├─ index.html
 └─ README.md
