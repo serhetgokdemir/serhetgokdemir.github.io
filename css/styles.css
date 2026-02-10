@@ -9,9 +9,9 @@ body {
     line-height: 1.7;
     color: #000;
     background-color: #f8f9fa;
-    background-image: 
+    /* background-image: 
         repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.008) 2px, rgba(0,0,0,.008) 4px),
-        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.008) 2px, rgba(0,0,0,.008) 4px);
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.008) 2px, rgba(0,0,0,.008) 4px); */
     font-size: 16px;
     overflow-x: hidden;
 }
