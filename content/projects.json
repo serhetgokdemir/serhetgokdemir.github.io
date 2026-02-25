@@ -1,5 +1,15 @@
 [
     {
+        "id": "elea-coachig",
+        "title": "elea coaching",
+        "description": "elea coaching is a web application created for coaches to track weekly studies of students and provide feedback.",
+        "technologies": ["C#", "ASP.NET", "React.ts", "HTML/CSS"],
+        "hasDetail": false,
+        "links": {
+            "live": ""
+        }
+    },
+    {
         "id": "movie-teller",
         "title": "movie teller",
         "description": "A light weight and ad free movie recommendation app designed with 2000s web UI aesthetics.",
