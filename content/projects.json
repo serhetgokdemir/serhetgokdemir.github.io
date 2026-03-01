@@ -3,7 +3,7 @@
         "id": "elea-coachig",
         "title": "elea coaching",
         "description": "elea coaching is a web application created for coaches to track weekly studies of students and provide feedback.",
-        "technologies": ["C#", "ASP.NET", "React.ts", "HTML/CSS"],
+        "technologies": ["C#", "ASP.NET","TypeScript", "React", "HTML/CSS", "PostgreSQL"],
         "hasDetail": false,
         "links": {
             "live": ""
