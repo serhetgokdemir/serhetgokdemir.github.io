@@ -2,7 +2,7 @@
     {
         "id": "thesis",
         "title": "nonlinear equation system solutions with optimization",
-        "description": "My bachelor thesis focused on solving nonlinear equation systems using numerical methods and optimization techniques. Analyzing their convergence and performance.",
+        "description": "My bachelor thesis focused on solving nonlinear equation systems using numerical methods, optimization techniques and analyzing their convergence and performance.",
         "technologies": ["Broyden","Brent","Damped Newton","Newton","Secant","Bisection","Python", "LaTeX"],
         "hasDetail": false,
         "links": {
