@@ -1,5 +1,15 @@
 [
     {
+        "id": "thesis",
+        "title": "nonlinear equation system solutions with optimization",
+        "description": "My bachelor thesis focused on solving nonlinear equation systems using numerical methods and optimization techniques. Analyzing their convergence and performance.",
+        "technologies": ["Broyden","Brent","Damped Newton","Newton","Secant","Bisection","Python", "LaTeX"],
+        "hasDetail": false,
+        "links": {
+            "github": "https://github.com/serhetgokdemir/thesis"
+        }
+    },
+    {
         "id": "elea-coachig",
         "title": "elea coaching",
         "description": "elea coaching is a web application created for coaches to track weekly studies of students and provide feedback.",
