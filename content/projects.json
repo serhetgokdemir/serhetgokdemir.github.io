@@ -1,5 +1,15 @@
 [
     {
+        "id": "data-management-project",
+        "title": "Smart Healthcare Management",
+        "description": "A PostgreSQL-based database project for smart healthcare management. Featuring a fully normalized schema (BCNF), advanced SQL queries, indexing with performance analysis and a LaTeX report with ER/EER documentation.",
+        "technologies": ["PostgreSQL", "LaTeX"],
+        "hasDetail": false,
+        "links": {
+            "github": "https://github.com/serhetgokdemir/smart-healthcare-management"
+        }
+    },
+    {
         "id": "perperok",
         "title": "Perperok",
         "description": "Perperok is a locally running PDF unlocker application written in Python. It allows users to easily remove password protection from PDF files, enabling them to access and edit their documents without restrictions.",
