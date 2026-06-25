@@ -1,42 +1,12 @@
 [
     {
-        "id": "data-management-project",
-        "title": "Smart Healthcare Management",
-        "description": "A PostgreSQL-based database project for smart healthcare management. Featuring a fully normalized schema (BCNF), advanced SQL queries, indexing with performance analysis and a LaTeX report with ER/EER documentation.",
-        "technologies": ["PostgreSQL", "LaTeX"],
-        "hasDetail": false,
-        "links": {
-            "github": "https://github.com/serhetgokdemir/smart-healthcare-management"
-        }
-    },
-    {
-        "id": "perperok",
-        "title": "Perperok",
-        "description": "Perperok is a locally running PDF unlocker application written in Python. It allows users to easily remove password protection from PDF files, enabling them to access and edit their documents without restrictions.",
-        "technologies": ["Python", "PDF"],
-        "hasDetail": false,
-        "links": {
-            "github": "https://github.com/serhetgokdemir/perperok"
-        }
-    },
-    {
         "id": "thesis",
-        "title": "nonlinear equation system solutions with optimization",
+        "title": "nonlinear solvers",
         "description": "It is my bachelor's thesis focused on solving nonlinear equation systems using numerical methods, optimization techniques and analyzing their convergence and performance.",
         "technologies": ["Broyden","Brent","Damped Newton","Newton","Secant","Bisection","Python", "LaTeX"],
         "hasDetail": false,
         "links": {
             "github": "https://github.com/serhetgokdemir/thesis"
-        }
-    },
-    {
-        "id": "elea-coaching",
-        "title": "elea coaching",
-        "description": "elea coaching is a web application created for coaches to track weekly studies of students and provide feedback.",
-        "technologies": ["C#", "ASP.NET","TypeScript", "React", "HTML/CSS", "PostgreSQL"],
-        "hasDetail": false,
-        "links": {
-            "live": ""
         }
     },
     {
