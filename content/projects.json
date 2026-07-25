@@ -1,4 +1,14 @@
 [
+        {
+        "id": "dagile",
+        "title": "dagile",
+        "description": "Locally hosted daily work log for corporate people. Currently usable but new features are still being added.",
+        "technologies": ["C#", "ASP.NET", "TypeScript", "React", "PostgreSQL", "HTML/CSS"],
+        "hasDetail": false,
+        "links": {
+            "github": "https://github.com/serhetgokdemir/dagile"
+        }
+    },
     {
         "id": "thesis",
         "title": "nonlinear solvers",
